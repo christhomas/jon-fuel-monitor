@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+    <title>Jon's Amazing Fuel Gauge!</title>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Techniguard" />
+    </header>
+    <main>
+        <h1>Smart Fuel Monitoring System Tower 169</h1>
+        <h2>M10 Fuel remaining: <span id="result">302</span>g</h2>
+
+        <span>(Updating every 5 seconds)</span>
+
+        <div id="alert">
+            <p>Alert!!! Container is full. Email sent.</p>
+        </div>
+
+        <div id="gauge">
+            <img src="gauge.png" />
+            <div id="needle"></div>
+        </div>
+
+        <p>
+            <b>1700g - 10% Fuel - Cartridge Replenished</b>
+        </p>
+    </main>
+    <footer>
+        Copyright &copy; Jon Mc 2018
+    </footer>
+</body>

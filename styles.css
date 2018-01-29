@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body{
+    font-family: Helvetica;
+}
+
+header,
+main{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+h1 { font-size: 24px }
+h2 { font-size: 18px }
+
+#alert{
+    color: #F00000;
+    font-size:20px;
+    font-weight: bold;
+}
+
+#result{
+    color: #CC0000;
+}
+
+#gauge{
+    position: relative;
+    width: 345px;
+    height: 162px;
+    margin: 0 auto;
+}
+
+#needle{
+    position: absolute;
+    left: 167px;
+    bottom: 0;
+    width: 3px;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 150px #FF0000;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transform: rotate(-71deg);
+    transform-origin: bottom;
+}
